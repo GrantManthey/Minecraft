@@ -1,4 +1,5 @@
 #!/usr/bin/python
+# makes a block of stone
 # Import Minecraft libraries
 import mcpi.minecraft as minecraft
 import mcpi.block as block
@@ -9,12 +10,12 @@ mc = minecraft.Minecraft.create()
 pPos = mc.player.getTilePos()
 # Change block
 mc.setBlocks(
-    pPos.x-5, #down
+    pPos.x-5, #moves it along  the X axis
     pPos.y,
-    pPos.z-5, #left
-    pPos.x+5, #up
-    pPos.y-5, #down
-    pPos.z+10, #right
+    pPos.z-5, #moves it along the Z axis
+    pPos.x+5, 
+    pPos.y-5, #moves it along the Y axis
+    pPos.z+10, 
     block.STONE)
  
  
