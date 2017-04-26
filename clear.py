@@ -1,4 +1,4 @@
-
+# I took the village command, but instead I removed all but the part that makes air blocks. This allows me to clear  an area for doing other commands
 #!/usr/bin/env python3
 from mcpi.minecraft import Minecraft
 from mcpi import block
