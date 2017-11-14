@@ -1,7 +1,7 @@
 
 
 from mcpi.minecraft import Minecraft
-from mcpi import block	  
+from mcpi import*
 
 mc = Minecraft.create()
 air = 0
@@ -65,8 +65,15 @@ def makecircle():
 	mc.setBlocks(x-6,y-13,z,x-6,y-11,z, stonebrick) #13
 	mc.setBlocks(x-5,y-13,z,x-4,y-12,z, stonebrick) #13
 makecircle()
-
+def move():
+    place = mc.player.getPos()
+    place = str(place)
+    print ((place)[5:])
+    mc.player.setPos(place)
 makecircle()
+move()
+print('place')
+
 
 
 
